@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    tools:context="com.example.user.empressa.OTP.OTPConfirmActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/border">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/bg"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/signup_round_border">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:background="@android:color/transparent"
+                        android:fontFamily="@font/baskville"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:text="OTP "
+                        android:textColor="@color/signup"
+                        android:textSize="35px"
+
+                        />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/textView_Mobile"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="5dp"
+                    android:background="@android:color/transparent"
+                    android:fontFamily="@font/baskville"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:hint="9874561239"
+                    android:textColorHint="@color/signup"
+                    android:textColor="@color/signup"
+                    android:textSize="35px"/>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColorHint="#fff">
+
+                    <EditText
+                        android:id="@+id/edt_text_otp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/btn_pressed"
+                        android:fontFamily="serif-monospace"
+                        android:hint="Enter OTP here"
+                        android:inputType="number"
+                        android:maxLength="6"
+                        android:paddingBottom="15px"
+                        android:paddingLeft="10dp"
+                        android:paddingTop="15px"
+                        android:textAlignment="center"
+                        android:textColor="@color/white"
+                        android:textSize="15dp"
+                        tools:fontFamily="@font/baskville" />
+                </android.support.design.widget.TextInputLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/signup_round_border">
+
+
+                    <Button
+                        android:id="@+id/btn_submit_for_confirm_otp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="43dp"
+                        android:background="@android:color/transparent"
+                        android:fontFamily="@font/baskville"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="5dp"
+                        android:text="Confirm"
+                        android:textAllCaps="false"
+                        android:textColor="@color/signup"
+                        android:textSize="15dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:fontFamily="@font/baskville"
+                        android:text="OTP Not Recived ?"
+                        android:textColor="#fff" />
+
+                    <TextView
+                        android:id="@+id/txt_Click_here"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:fontFamily="@font/baskville"
+                        android:paddingLeft="5dp"
+                        android:text="Click here"
+                        android:textColor="@color/signup"
+                        tools:fontFamily="@font/baskville" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

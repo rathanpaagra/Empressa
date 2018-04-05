@@ -1,0 +1,649 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    tools:context="com.example.user.empressa.uploadVideo.PicFromGalleryActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/border">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <android.support.v4.widget.NestedScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginTop="5dp"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginTop="5dp">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="2dp"
+                            android:layout_marginRight="2dp"
+                            android:src="@drawable/logo" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginTop="12dp"
+                        android:background="@drawable/line_gradient"></View>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginTop="6dp"
+                        android:background="@drawable/line_gradient"></View>
+
+                    <LinearLayout
+                        android:id="@+id/ll_Applied_status"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_centerInParent="true"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+
+                        <!-- Capture picture button -->
+
+                        <TextView
+                            android:id="@+id/textView_successfully_applied"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="15dp"
+                            android:fontFamily="@font/baskville"
+                            android:hint="Successfully Applied"
+                            android:textAlignment="center"
+                            android:textColor="@color/white"
+                            android:textColorHint="@color/white"
+                            android:textSize="20dp" />
+
+                        <TextView
+                            android:id="@+id/textView_Role"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="15dp"
+                            android:fontFamily="@font/baskville"
+                            android:hint="Hero Role"
+                            android:textAlignment="center"
+                            android:textColor="@color/white"
+                            android:textColorHint="@color/white"
+                            android:textSize="20dp"
+                            android:textStyle="bold" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="20dp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="5"
+                                android:fontFamily="@font/baskville"
+                                android:gravity="center"
+                                android:text="Application_ID"
+                                android:textColor="@color/white"
+                                android:textSize="15dp" />
+
+                            <TextView
+                                android:id="@+id/txt_Application_ID"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="5"
+                                android:fontFamily="@font/baskville"
+                                android:gravity="center"
+                                android:hint="AUD001"
+                                android:textColor="@color/white"
+                                android:textColorHint="@color/white"
+                                android:textSize="15dp" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="10dp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="5"
+                                android:fontFamily="@font/baskville"
+                                android:gravity="center"
+                                android:text="Email"
+                                android:textColor="@color/white"
+                                android:textSize="15dp" />
+
+                            <TextView
+                                android:id="@+id/txt_Email_ID"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="5"
+                                android:fontFamily="@font/baskville"
+                                android:gravity="center"
+                                android:hint="test@gmail.com"
+                                android:textColor="@color/white"
+                                android:textColorHint="@color/white"
+                                android:textSize="15dp" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="10dp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="5"
+                                android:fontFamily="@font/baskville"
+                                android:gravity="center"
+                                android:text="Location"
+                                android:textColor="@color/white"
+                                android:textSize="15dp" />
+
+                            <TextView
+                                android:id="@+id/txt_City"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="5"
+                                android:fontFamily="@font/baskville"
+                                android:gravity="center"
+                                android:hint="Banglore"
+                                android:textColor="@color/white"
+                                android:textColorHint="@color/white"
+                                android:textSize="15dp" />
+
+                        </LinearLayout>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="25dp"
+                            android:fontFamily="@font/baskville"
+                            android:hint="Good Luck"
+                            android:textAlignment="center"
+                            android:textColor="@color/white"
+                            android:textColorHint="@color/white"
+                            android:textSize="20dp"
+                            android:textStyle="bold" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginBottom="5dp"
+                            android:layout_marginTop="15dp"
+                            android:background="@drawable/signup_round_border">
+
+                            <Button
+                                android:id="@+id/Ok"
+                                android:layout_width="wrap_content"
+                                android:layout_height="43dp"
+                                android:layout_gravity="center"
+                                android:background="@android:color/transparent"
+                                android:fontFamily="@font/baskville"
+                                android:paddingLeft="5dp"
+                                android:paddingRight="5dp"
+                                android:text="Home"
+                                android:textAllCaps="false"
+                                android:textColor="@color/signup"
+                                android:textSize="15dp" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ll_uploading_status"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+
+                        <TextView
+                            android:id="@+id/txtPercentage"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginBottom="15dp"
+                            android:layout_marginTop="15dp"
+                            android:fontFamily="@font/baskville"
+                            android:textColor="@color/white"
+                            android:textSize="30dp" />
+
+                        <ProgressBar
+                            android:id="@+id/progressBar"
+                            style="?android:attr/progressBarStyleHorizontal"
+                            android:layout_width="fill_parent"
+                            android:layout_height="10dp"
+                            android:layout_marginBottom="35dp" />
+
+                        <LinearLayout
+                            android:id="@+id/ll_upload_cancel"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="15dp"
+                            android:background="@drawable/signup_round_border">
+
+                            <Button
+                                android:id="@+id/btnUploadcancel"
+                                android:layout_width="wrap_content"
+                                android:layout_height="43dp"
+                                android:layout_gravity="center"
+                                android:background="@android:color/transparent"
+                                android:fontFamily="@font/baskville"
+                                android:paddingLeft="5dp"
+                                android:paddingRight="5dp"
+                                android:text="Cancel"
+                                android:textAllCaps="false"
+                                android:textColor="@color/signup"
+                                android:textSize="15dp" />
+
+                        </LinearLayout>
+
+                        <!-- <LinearLayout
+                             android:layout_width="wrap_content"
+                             android:layout_height="wrap_content"
+                             android:layout_gravity="center"
+                             android:layout_marginTop="15dp"
+                             android:layout_marginBottom="5dp"
+                             android:background="@drawable/signup_round_border">
+
+                             <Button
+                                 android:id="@+id/Ok"
+                                 android:layout_width="wrap_content"
+                                 android:layout_height="43dp"
+                                 android:layout_gravity="center"
+                                 android:background="@android:color/transparent"
+                                 android:fontFamily="@font/baskville"
+                                 android:paddingLeft="5dp"
+                                 android:paddingRight="5dp"
+                                 android:text="Home"
+                                 android:textAllCaps="false"
+                                 android:textColor="@color/signup"
+                                 android:textSize="15dp" />
+                         </LinearLayout>-->
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:id="@+id/ll_pic_status"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_centerInParent="true"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <!-- Capture picture button -->
+
+                        <TextView
+                            android:id="@+id/textView_audion_role"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:fontFamily="@font/baskville"
+                            android:hint="Hero Role"
+                            android:textAlignment="center"
+                            android:textColor="@color/white"
+                            android:textColorHint="@color/white"
+                            android:textSize="25dp" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="5dp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="7"
+                                android:fontFamily="@font/baskville"
+                                android:gravity="center"
+                                android:text="Status:"
+                                android:textColor="@color/white"
+                                android:textSize="15dp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="3"
+                                android:fontFamily="@font/baskville"
+                                android:gravity="center"
+                                android:text="Audition Going On"
+                                android:textColor="@color/white"
+                                android:textSize="15dp" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="5dp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="7"
+                                android:fontFamily="@font/baskville"
+                                android:gravity="center"
+                                android:text="Description:"
+                                android:textColor="@color/white"
+                                android:textSize="15dp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/textView_Description"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="3"
+                                android:fontFamily="@font/baskville"
+                                android:text="Audition Going On Audition Going On"
+                                android:textAlignment="center"
+                                android:textColor="@color/white"
+                                android:textSize="15dp" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="10dp"
+                            android:orientation="vertical"
+                            android:visibility="gone">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginTop="10dp"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="239dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="3"
+                                    android:fontFamily="@font/baskville"
+                                    android:gravity="center"
+                                    android:text="Select your Video from Gallery"
+                                    android:textColor="@color/white"
+                                    android:textSize="15dp"
+                                    android:textStyle="bold" />
+
+                                <LinearLayout
+                                    android:id="@+id/ll_PicVideo1"
+                                    android:layout_width="50dp"
+                                    android:layout_height="50dp"
+                                    android:layout_centerInParent="true"
+                                    android:layout_marginRight="2dp"
+                                    android:background="@drawable/background_gradient"
+                                    android:gravity="center"
+                                    android:orientation="vertical">
+
+                                    <ImageView
+                                        android:id="@+id/btnPicVideo_test"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        app:srcCompat="@drawable/pic_icon" />
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="10dp"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginTop="10dp"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="239dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="2"
+                                    android:fontFamily="@font/baskville"
+                                    android:gravity="center"
+                                    android:paddingRight="10px"
+                                    android:text="Upload your video here to apply for Audition"
+                                    android:textColor="@color/white"
+                                    android:textSize="15dp"
+                                    android:textStyle="bold" />
+
+                                <LinearLayout
+                                    android:id="@+id/ll_UploadVideo"
+                                    android:layout_width="40dp"
+                                    android:layout_height="50dp"
+                                    android:layout_centerInParent="true"
+                                    android:layout_marginLeft="2dp"
+                                    android:layout_weight="1"
+                                    android:background="@drawable/background_gradient"
+                                    android:gravity="center"
+                                    android:orientation="vertical">
+
+                                    <ImageView
+                                        android:id="@+id/btnPicVideo"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:background="@drawable/upload_icon" />
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+
+                            <TextView
+                                android:id="@+id/textView"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginTop="10dp"
+                                android:fontFamily="@font/baskville"
+                                android:hint="File not Uploaded"
+                                android:textAlignment="center"
+                                android:textColor="@color/white"
+                                android:textColorHint="@color/white" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="6dp"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:id="@+id/ll_submit"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="15dp"
+                                android:background="@drawable/signup_round_border">
+
+
+                                <Button
+                                    android:id="@+id/btn_home"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="43dp"
+                                    android:layout_gravity="center"
+                                    android:background="@android:color/transparent"
+                                    android:fontFamily="@font/baskville"
+                                    android:paddingLeft="5dp"
+                                    android:paddingRight="5dp"
+                                    android:text="Home"
+                                    android:textAllCaps="false"
+                                    android:textColor="@color/signup"
+                                    android:textSize="15dp" />
+
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="15dp"
+                                android:background="@drawable/signup_round_border">
+
+                                <Button
+                                    android:id="@+id/btnUploadVideo"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="43dp"
+                                    android:layout_gravity="center"
+                                    android:background="@android:color/transparent"
+                                    android:fontFamily="@font/baskville"
+                                    android:paddingLeft="5dp"
+                                    android:paddingRight="5dp"
+                                    android:text="Upload"
+                                    android:textAllCaps="false"
+                                    android:textColor="@color/signup"
+                                    android:textSize="15dp" />
+
+                            </LinearLayout>
+                        </LinearLayout>
+                        <!--<Button
+                            android:id="@+id/btnCapturePicture"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="20dp"
+                            android:background="@color/colorAccent"
+                            android:paddingLeft="20dp"
+                            android:paddingRight="20dp"
+                            android:text="@string/btnTakePicture"
+                            android:textColor="@color/white" />-->
+
+                        <!--<TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="20dp"
+                            android:gravity="center_horizontal"
+                            android:text="@string/or"
+                            android:textColor="@color/txt_font" />
+
+                        &lt;!&ndash; Record video button &ndash;&gt;-->
+
+
+                        <!--<Button
+                            android:id="@+id/btnRecordVideo"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@color/colorAccent"
+                            android:paddingLeft="20dp"
+                            android:paddingRight="20dp"
+                            android:text="Pic Video"
+                            android:textColor="@color/white" />
+
+                        <Button
+                            android:id="@+id/btnUploadVideo"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:background="@color/gradient2"
+                            android:paddingLeft="20dp"
+                            android:paddingRight="20dp"
+                            android:text="Upload"
+                            android:textColor="@color/white" />-->
+
+                        <!--<LinearLayout
+                            android:id="@+id/btnUploadVideo1"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_centerInParent="true"
+                            android:background="@drawable/background_gradient"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:id="@+id/imageButton"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                app:srcCompat="@drawable/upload_icon" />
+                        </LinearLayout>-->
+
+                    </LinearLayout>
+                    <!--
+                                        <LinearLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginTop="20dp"
+                                            android:gravity="center"
+                                            android:orientation="horizontal">
+
+                                            <TextView
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="match_parent"
+                                                android:fontFamily="@font/baskville"
+                                                android:text="Dont have Account ?"
+                                                android:textColor="#fff" />
+
+                                            <TextView
+                                                android:id="@+id/txt_sign_up"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="match_parent"
+                                                android:fontFamily="@font/baskville"
+                                                android:paddingLeft="5dp"
+                                                android:text="Sign Up"
+                                                android:textColor="@color/signup"
+                                                android:textStyle="bold" />
+                                        </LinearLayout>-->
+
+
+                </LinearLayout>
+
+                </android.support.v4.widget.NestedScrollView>
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
